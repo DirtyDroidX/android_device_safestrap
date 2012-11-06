@@ -31,6 +31,10 @@ PRODUCT_COPY_FILES += \
     $(COMMON_FOLDER)/app/qcom-common/recovery-install.sh:$(TARGET_RECOVERY_OUT)/root/../APP/recovery-install.sh \
     $(COMMON_FOLDER)/app/qcom-common/recovery-uninstall.sh:$(TARGET_RECOVERY_OUT)/root/../APP/recovery-uninstall.sh \
 
+# rootfs
+PRODUCT_COPY_FILES += \
+    $(DEVICE_FOLDER)/init.vzw.rc:$(TARGET_RECOVERY_OUT)/root/../install-files/etc/safestrap/rootfs/init.vzw.rc \
+
 # Choose a Common Hijack
 PRODUCT_COPY_FILES += \
     $(COMMON_FOLDER)/hijacks/logwrapper-qcom:$(TARGET_RECOVERY_OUT)/root/../install-files/bin/logwrapper
