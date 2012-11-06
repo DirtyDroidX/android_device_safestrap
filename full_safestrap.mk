@@ -34,6 +34,7 @@ PRODUCT_COPY_FILES += \
 # rootfs
 PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/init.vzw.rc:$(TARGET_RECOVERY_OUT)/root/../install-files/etc/safestrap/rootfs/init.vzw.rc \
+    $(DEVICE_FOLDER)/init:$(TARGET_RECOVERY_OUT)/root/../install-files/etc/safestrap/rootfs/init \
 
 # Choose a Common Hijack
 PRODUCT_COPY_FILES += \
